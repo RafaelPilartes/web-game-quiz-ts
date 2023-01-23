@@ -8,11 +8,7 @@ export const FooterContainer = styled.footer`
   justify-content: center;
 
   background: ${({ theme }) => theme.colors['base-background']}
-    linear-gradient(
-      180deg,
-      rgba(184, 84, 232, 0.2) 0%,
-      rgba(184, 84, 232, 0.3) 100%
-    );
+    linear-gradient(180deg, #1c1c1c9f 20%, rgba(184, 84, 232, 0.26) 100%);
 
   .containerBottom {
     display: flex;

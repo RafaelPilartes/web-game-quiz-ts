@@ -4,7 +4,9 @@ export const QuestionContainer = styled.div`
   background-color: #8435de;
   border-radius: 1rem;
   padding: 2rem;
-  width: 500px;
+
+  width: 100%;
+  max-width: 500px;
   color: #fff;
 
   #question p {

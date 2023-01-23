@@ -33,6 +33,21 @@ export const ModalContainer = styled.div`
       gap: 1rem;
     }
   }
+
+  @media only screen and (max-width: 574px) {
+    .container {
+      .title {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 470px) {
+    .container {
+      .title {
+        font-size: 1.2rem;
+      }
+    }
+  }
 `
 export const ButtonAction = styled.a`
   display: flex;

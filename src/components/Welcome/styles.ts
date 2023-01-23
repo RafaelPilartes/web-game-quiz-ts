@@ -8,6 +8,7 @@ export const WelcomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0rem 1rem;
   gap: 1.6rem;
   color: ${({ theme }) => theme.colors['base-white']};
 
@@ -24,7 +25,7 @@ export const WelcomeContainer = styled.div`
   }
 
   img {
-    width: 34rem;
+    width: 100%;
     margin-top: 2rem;
   }
 `

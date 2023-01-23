@@ -8,8 +8,9 @@ export const CategoryCardContainer = styled.button`
   border: none;
   background-color: transparent;
 
+  width: 100%;
   max-width: 26rem;
-  min-width: 20rem;
+  min-width: 16rem;
   height: 14rem;
 
   cursor: pointer;
@@ -120,6 +121,24 @@ export const CategoryCardContainer = styled.button`
 
     h3 {
       color: ${props => props.theme.colors['base-white']};
+    }
+  }
+
+  @media only screen and (max-width: 574px) {
+    min-width: 12rem;
+    height: 9rem;
+  }
+  @media only screen and (max-width: 426px) {
+    min-width: 12rem;
+    height: 9rem;
+
+    .containerInfo {
+      h2 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 0.8rem;
+      }
     }
   }
 `

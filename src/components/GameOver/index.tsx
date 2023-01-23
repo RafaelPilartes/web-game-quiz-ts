@@ -3,6 +3,7 @@ import { useContext } from 'react'
 // Lottie
 import Lottie from 'lottie-react'
 import CelebrateQuizAnimation from '../../data/lottie/celebrate.json'
+import CelebrationGraffeQuizAnimation from '../../data/lottie/Celebration-giraffe.json'
 import CongratulationsQuizAnimation from '../../data/lottie/congratulations.json'
 import LossQuizAnimation from '../../data/lottie/loss.json'
 
@@ -17,6 +18,7 @@ function GameOver() {
   const [quizState, dispatch] = useContext(QuizContext)
   const questionsLength = quizState.questions.length
 
+  // menos de metade
   const lessThanHalf = Number(questionsLength / 2)
 
   return (
@@ -41,6 +43,7 @@ function GameOver() {
       )}
       {quizState.score == 0 && (
         <div className="prepareQuiz">
+          <h1>Naõ acertou nenhuma</h1>
           <Lottie
             className="lossQuiz"
             animationData={LossQuizAnimation}
@@ -49,6 +52,11 @@ function GameOver() {
         </div>
       )}
       {quizState.score > 0 && quizState.score <= lessThanHalf && (
+        <div className="prepareQuiz">
+          <Lottie animationData={CelebrationGraffeQuizAnimation} loop={true} />
+        </div>
+      )}
+      {quizState.score > 0 && quizState.score >= lessThanHalf && (
         <div className="prepareQuiz">
           <Lottie animationData={CelebrateQuizAnimation} loop={true} />
         </div>

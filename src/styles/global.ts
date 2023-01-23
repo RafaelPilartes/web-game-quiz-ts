@@ -12,13 +12,6 @@ export const GlobalStyle = createGlobalStyle`
     background: ${({ theme }) => theme.colors['base-background']};
     color: ${({ theme }) => theme.colors['base-text']};
     -webkit-font-smoothing: antialiased;
-    
-    background: ${({ theme }) =>
-      theme.colors['base-background']} linear-gradient(
-      180deg,
-      #1c1c1c9f 80%,
-      rgba(184, 84, 232, 0.26) 100%
-    );
   }
   body, input, textarea, button {
     font-family: ${({ theme }) => theme.fonts.regular};

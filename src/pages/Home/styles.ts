@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const HomeContainer = styled.section`
   width: 100%;
-  height: 100%;
   position: relative;
   display: flex;
   align-items: flex-start;

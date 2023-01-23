@@ -56,11 +56,13 @@ function GameOver() {
           <Lottie animationData={CelebrationGraffeQuizAnimation} loop={true} />
         </div>
       )}
-      {quizState.score > 0 && quizState.score >= lessThanHalf && (
-        <div className="prepareQuiz">
-          <Lottie animationData={CelebrateQuizAnimation} loop={true} />
-        </div>
-      )}
+      {quizState.score > 0 &&
+        quizState.score >= lessThanHalf &&
+        quizState.score < questionsLength && (
+          <div className="prepareQuiz">
+            <Lottie animationData={CelebrateQuizAnimation} loop={true} />
+          </div>
+        )}
 
       <BaseBtn
         onClick={() => dispatch({ type: 'NEW_GAME' })}
